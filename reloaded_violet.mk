@@ -32,6 +32,9 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 # Inherit PixelGApps
 $(call inherit-product-if-exists, vendor/gapps/config.mk)
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME="violet" \
+    TARGET_DEVICE="violet"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
