@@ -20,6 +20,7 @@ BLISS_BUILDTYPE := OFFICIAL
 BLISS_DEVELOPER := AFTAB_111
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCREMENTAL_BLOCK_BASED := true
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 IS_PHONE:= true
 
