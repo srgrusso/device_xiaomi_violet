@@ -13,25 +13,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common AospExtended stuff.
+# Inherit some common Derpfest stuff.
 TARGET_INCLUDE_WIFI_EXT := true
-EXTENDED_BUILD_TYPE := Kevin87
+DERP_BUILDTYPE := OFFICIAL
 TARGET_INCLUDE_STOCK_ARCORE := true
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
 #bootanimation
-TARGET_BOOT_ANIMATION_RES := 2280
+TARGET_BOOT_ANIMATION_RES := 1080
 
-# Build with GApps if GAPPS_BUILD is true
-ifeq ($(GAPPS_BUILD),true)
-    WITH_GAPPS := true
-    TARGET_GAPPS_ARCH := arm64
-    IS_PHONE := true
-    TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
-endif
+# Build with GApps
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_violet
+PRODUCT_NAME := derp_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
