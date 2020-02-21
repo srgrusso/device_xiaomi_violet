@@ -15,16 +15,11 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common Derpfest stuff.
 TARGET_INCLUDE_WIFI_EXT := true
-DERP_BUILDTYPE := OFFICIAL
 TARGET_INCLUDE_STOCK_ARCORE := true
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
 #bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
-
-# Build with GApps
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := derp_violet
