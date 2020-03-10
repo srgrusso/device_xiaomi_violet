@@ -16,7 +16,11 @@ if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
 MK_ROOT="${MY_DIR}"/../../..
 
+<<<<<<< HEAD
 HELPER="${MK_ROOT}/vendor/aosip/build/tools/extract_utils.sh"
+=======
+HELPER="${MK_ROOT}/vendor/bliss/build/tools/extract_utils.sh"
+>>>>>>> 86097eb... Blissify
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
