@@ -23,6 +23,9 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 IS_PHONE:= true
 
+# Inherit PixelGApps
+$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := bliss_violet
 PRODUCT_DEVICE := violet
