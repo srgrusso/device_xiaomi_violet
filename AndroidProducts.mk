@@ -5,18 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-<<<<<<< HEAD
-    $(LOCAL_DIR)/derp_violet.mk
-
-    COMMON_LUNCH_CHOICES := \
-    derp_violet-user \
-    derp_violet-userdebug \
-    derp_violet-eng
-=======
     $(LOCAL_DIR)/bliss_violet.mk
 
 COMMON_LUNCH_CHOICES := \
     bliss_violet-userdebug \
     bliss_violet-eng \
     bliss_violet-user
->>>>>>> 86097eb... Blissify
