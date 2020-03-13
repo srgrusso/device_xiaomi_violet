@@ -13,6 +13,9 @@ $(call inherit-product-if-exists, packages/apps/GoogleCamera/gcam.mk)
 # Firmware
 $(call inherit-product, vendor/xiaomi/violet/firmware/firmware.mk)
 
+#Gapps
+$(call inherit-product-if-exists, vendor/gapps/config.mk)
+
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
