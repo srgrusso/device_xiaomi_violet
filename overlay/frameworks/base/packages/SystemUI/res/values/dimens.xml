@@ -29,5 +29,5 @@
     <dimen name="keyguard_carrier_text_margin">55px</dimen>
     
     <!-- Padding for icons of the status bar from the corners. -->	
-    <dimen name="status_bar_extra_padding">16dp</dimen>
+    <dimen name="status_bar_extra_padding">18dp</dimen>
 </resources>
