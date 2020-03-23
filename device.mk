@@ -7,11 +7,8 @@
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/violet/violet-vendor.mk)
 
-# GoogleCamera
-$(call inherit-product-if-exists, packages/apps/GoogleCamera/gcam.mk)
-
 # Firmware
-$(call inherit-product, vendor/xiaomi/violet/firmware/firmware.mk)
+$(call inherit-product, vendor/xiaomi/firmware/violet/firmware.mk)
 
 #Gapps
 $(call inherit-product-if-exists, vendor/gapps/gapps.mk)
@@ -179,14 +176,6 @@ PRODUCT_PACKAGES += \
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts
-
-# DerpFest Customs
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-DERP_BUILDTYPE := Official
-BUILD_DATE := $(shell date +"%Y%m%d-%H%M%S")
-IS_PHONE := true
-CURRENT_BUILD_TYPE := gapps
 
 # Display
 PRODUCT_PACKAGES += \
