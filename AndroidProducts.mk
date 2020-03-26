@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_violet.mk
+    $(LOCAL_DIR)/revengeos_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_violet-userdebug \
-    bliss_violet-eng \
-    bliss_violet-user
+    revengeos_violet-userdebug \
+    revengeos_violet-eng \
+    revengeos_violet-user
