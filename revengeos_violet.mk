@@ -19,14 +19,14 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_INCREMENTAL_BLOCK_BASED := true
-$(call inherit-product, vendor/bliss/config/common.mk)
+$(call inherit-product, vendor/revengeos/config/common.mk)
 IS_PHONE:= true
 
 # Inherit PixelGApps
 $(call inherit-product-if-exists, vendor/gapps/config.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := bliss_violet
+PRODUCT_NAME := revengeos_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
