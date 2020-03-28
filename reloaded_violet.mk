@@ -18,7 +18,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_INCREMENTAL_BLOCK_BASED := true
-$(call inherit-product, vendor/reloaded/config/common.mk)
+$(call inherit-product, vendor/reloaded/common.mk)
 IS_PHONE:= true
 
 # Device identifier. This must come after all inclusions.
