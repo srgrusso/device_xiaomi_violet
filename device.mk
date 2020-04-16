@@ -16,6 +16,9 @@ $(call inherit-product-if-exists, vendor/gapps/gapps.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+# MiuiCamera
+$(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
+
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
@@ -36,7 +39,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage/lineage-sdk
 
 PRODUCT_PACKAGES += \
-    NotchBarKiller
+    NoCutoutOverlay
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
