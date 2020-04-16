@@ -39,7 +39,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage/lineage-sdk
 
 PRODUCT_PACKAGES += \
-    NotchBarKiller
+    NoCutoutOverlay
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
