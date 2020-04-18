@@ -34,3 +34,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 $(call inherit-product-if-exists, vendor/gapps/gapps.mk)
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Force triple frame buffers
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
