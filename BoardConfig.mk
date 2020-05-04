@@ -117,6 +117,11 @@ TARGET_PROVIDES_KEYMASTER := true
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
+# GAPPS
+TARGET_GAPPS_OVERRIDE += \
+    GoogleCamera \
+    GoogleDialer
+
 # Vendor init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_violet
 TARGET_RECOVERY_DEVICE_MODULES := libinit_violet
