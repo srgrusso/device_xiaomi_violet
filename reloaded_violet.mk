@@ -15,6 +15,8 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common Reloaded stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+RELOADED_BUILDTYPE=OFFICIAL
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_INCREMENTAL_BLOCK_BASED := true
@@ -27,6 +29,9 @@ PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
 PRODUCT_MANUFACTURER := Xiaomi
+
+# Inherit PixelGApps
+$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="violet" \
