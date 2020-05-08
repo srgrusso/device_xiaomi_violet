@@ -198,5 +198,8 @@ WIFI_HIDL_FEATURE_AWARE := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# Platform SPL
+PLATFORM_SECURITY_PATCH_OVERRIDE := 2020-04-01
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/violet/BoardConfigVendor.mk
