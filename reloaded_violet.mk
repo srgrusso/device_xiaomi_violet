@@ -33,7 +33,10 @@ PRODUCT_MANUFACTURER := Xiaomi
 # Inherit PixelGApps
 $(call inherit-product-if-exists, vendor/gapps/gapps.mk)
 
+BUILD_FINGERPRINT := "xiaomi/violet/violet:9/PKQ1.181203.001/V10.3.9.0.PFHINXM:user/release-keys"
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="violet-user 9 PKQ1.181203.001 V10.3.9.0.PFHINXM release-keys" \
     PRODUCT_NAME="violet" \
     TARGET_DEVICE="violet"
 
