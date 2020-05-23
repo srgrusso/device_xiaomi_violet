@@ -1,2 +1,1 @@
 allow init persist_block_device:lnk_file relabelto;
-
