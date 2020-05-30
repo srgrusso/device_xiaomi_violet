@@ -17,7 +17,6 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 BLISS_BUILDTYPE := OFFICIAL
-BLISS_DEVELOPER := AFTAB_111
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_INCREMENTAL_BLOCK_BASED := true
@@ -26,6 +25,10 @@ IS_PHONE:= true
 
 # Inherit PixelGApps
 $(call inherit-product-if-exists, vendor/gapps/gapps.mk)
+
+# Device Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.bliss.maintainer=AFTAB-111
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := bliss_violet
