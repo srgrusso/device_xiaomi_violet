@@ -37,6 +37,9 @@ TARGET_OTA_ASSERT_DEVICE := violet
 TARGET_BOOTLOADER_BOARD_NAME := sm6150
 TARGET_NO_BOOTLOADER := true
 
+#Gapps
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 androidboot.usbcontroller=a600000.dwc3 earlycon=msm_geni_serial,0x880000 loop.max_part=16
@@ -118,11 +121,6 @@ TARGET_PROVIDES_KEYMASTER := true
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
-
-# GAPPS
-TARGET_GAPPS_OVERRIDE += \
-    GoogleCamera \
-    GoogleDialer
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true

@@ -8,7 +8,7 @@
 $(call inherit-product-if-exists, vendor/xiaomi/violet/violet-vendor.mk)
 
 #Gapps
-$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
+$(call inherit-product-if-exists, vendor/gapps/config.mk)
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)

@@ -31,7 +31,7 @@ PRODUCT_MODEL := Redmi Note 7 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Inherit PixelGApps
-$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
+$(call inherit-product-if-exists, vendor/gapps/config.mk)
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
