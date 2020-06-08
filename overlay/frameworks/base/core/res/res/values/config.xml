@@ -563,4 +563,6 @@
 
     <!-- Hide notch  -->
     <bool name="config_physicalDisplayCutout">true</bool>
+     
+    <string name="config_recentsComponentName" translatable="false">ch.deletescape.lawnchair.ci/com.android.quickstep.RecentsActivity</string> 
 </resources>
