@@ -56,6 +56,9 @@ TARGET_KERNEL_CONFIG := vendor/violet-perf_defconfig
 # Enable stats logging in LMKD
 TARGET_LMKD_STATS_LOG := true
 
+#Lawnchair
+TARGET_USES_LAWNCHAIR := true
+
 # Platform
 TARGET_BOARD_PLATFORM := sm6150
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno612
