@@ -46,11 +46,3 @@ ro.netflix.bsp_rev=Q6150-17263-1
 
 # Recovery
 persist.sys.recovery_update=true
-
-# Pixel Prop
-ro.build.fingerprint=google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys
-ro.product.manufacturer=Google
-ro.product.device=coral
-ro.product.brand=google
-ro.product.name=coral
-ro.product.model=Pixel 4 XL
